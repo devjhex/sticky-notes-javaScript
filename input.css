@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "nunito";
+    src: url(./fonts/Nunito-VariableFont_wght.ttf);
+}
+
+@layer components{
+    .sticky-note {
+       @apply p-6 w-11/12 md:w-[22rem] text-black rounded-xl mx-auto relative cursor-pointer duration-[.5s] hover:scale-[1.1];
+    }
+}
+
+@layer utilities {
+    @variants responsive {
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+      }
+    }
+  }

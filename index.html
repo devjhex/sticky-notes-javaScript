@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en" class="font-nunito">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <script src="app.js" defer></script>
+    <title>Sticky Notes</title>
+</head>
+<body class="bg-[#252525] pb-[8rem]">
+  <header class="p-4 flex justify-between items-center max-w-[750px] md:mx-auto">
+
+    <h1 class=" text-[2.68rem] md:text-[4rem] font-[600] text-left text-white">NOTEX</h1>
+   <div class="flex w-max">
+    <div class="w-[3.1rem] md:w-[4.3rem] h-[3.1rem] md:h-[4.3rem] mr-[1.3rem] shrink-0 rounded-[.9rem] bg-[#3B3B3B] flex justify-center items-center">
+        <button>
+            <svg class="block md:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <g clip-path="url(#clip0_125_55)">
+                  <path d="M15.5 14H14.71L14.43 13.73C15.63 12.33 16.25 10.42 15.91 8.39002C15.44 5.61002 13.12 3.39002 10.32 3.05002C6.09 2.53002 2.53 6.09001 3.05 10.32C3.39 13.12 5.61 15.44 8.39 15.91C10.42 16.25 12.33 15.63 13.73 14.43L14 14.71V15.5L18.25 19.75C18.66 20.16 19.33 20.16 19.74 19.75C20.15 19.34 20.15 18.67 19.74 18.26L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.50001C5 7.01001 7.01 5.00002 9.5 5.00002C11.99 5.00002 14 7.01001 14 9.50001C14 11.99 11.99 14 9.5 14Z" fill="white"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_125_55">
+                    <rect width="24" height="24" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+              <svg class="hidden md:block" xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
+                <g clip-path="url(#clip0_281_70)">
+                  <path d="M29.7083 26.8333H28.1941L27.6575 26.3158C29.9575 23.6325 31.1458 19.9716 30.4941 16.0808C29.5933 10.7525 25.1466 6.49748 19.78 5.84581C11.6725 4.84915 4.84915 11.6725 5.84581 19.78C6.49748 25.1466 10.7525 29.5933 16.0808 30.4941C19.9716 31.1458 23.6325 29.9575 26.3158 27.6575L26.8333 28.1941V29.7083L34.9791 37.8541C35.765 38.64 37.0491 38.64 37.835 37.8541C38.6208 37.0683 38.6208 35.7841 37.835 34.9983L29.7083 26.8333ZM18.2083 26.8333C13.4358 26.8333 9.58331 22.9808 9.58331 18.2083C9.58331 13.4358 13.4358 9.58331 18.2083 9.58331C22.9808 9.58331 26.8333 13.4358 26.8333 18.2083C26.8333 22.9808 22.9808 26.8333 18.2083 26.8333Z" fill="white"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_281_70">
+                    <rect width="46" height="46" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+        </button>
+    </div>
+    <div class="w-[3.1rem] md:w-[4.3rem] h-[3.1rem] md:h-[4.3rem] shrink-0 rounded-[.9rem] bg-[#3B3B3B] flex justify-center items-center">
+       <button>
+        <svg class="block md:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z" fill="white"/>
+          </svg>
+
+          <svg class="hidden md:block" xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
+            <path d="M21.0833 13.4166H24.9166V17.25H21.0833V13.4166ZM21.0833 21.0833H24.9166V32.5833H21.0833V21.0833ZM22.9999 3.83331C12.4199 3.83331 3.83325 12.42 3.83325 23C3.83325 33.58 12.4199 42.1666 22.9999 42.1666C33.5799 42.1666 42.1666 33.58 42.1666 23C42.1666 12.42 33.5799 3.83331 22.9999 3.83331ZM22.9999 38.3333C14.5474 38.3333 7.66659 31.4525 7.66659 23C7.66659 14.5475 14.5474 7.66665 22.9999 7.66665C31.4524 7.66665 38.3333 14.5475 38.3333 23C38.3333 31.4525 31.4524 38.3333 22.9999 38.3333Z" fill="white"/>
+          </svg>
+       </button>
+    </div>
+   </div>
+</header>
+    <main class="relative">
+        <section class="container relative flex flex-col gap-[1rem] w-11/12 md:max-w-[750px] mx-auto md:h-[500px] md:flex-wrap  md:mx-auto pb-2 md:mt-[3rem]">
+           <div class="background">
+
+              <div class="w-[21rem] md:w-[37rem] h-[21rem] md:h-[30rem]  [background-image:url('./images/addNotes.png')] md:[background-image:url('./images/addNotesBig.png')] bg-no-repeat mt-[3rem] mx-auto">
+              </div>
+              <p class="mt-[3rem] text-[1.25rem] font-[300] w-max mx-auto text-white">Create your first note!</p>
+           </div>
+        </section>
+        <div class="w-max fixed mt-[2rem] bottom-4 md:bottom-4 right-4 drop-shadow-2xl add">
+          <button class="w-[4.3rem] md:w-[7.6rem] md:h-[7.6rem] flex justify-center items-center h-[4.3rem] shrink-0 bg-[#252525]  hover:bg-[#4e4d4d] duration-[.5s] rounded-full right-0 drop-shadow-2xl">
+              <svg class="md:hidden" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                  <g clip-path="url(#clip0_115_17)">
+                    <path d="M36 26H26V36C26 37.1 25.1 38 24 38C22.9 38 22 37.1 22 36V26H12C10.9 26 10 25.1 10 24C10 22.9 10.9 22 12 22H22V12C22 10.9 22.9 10 24 10C25.1 10 26 10.9 26 12V22H36C37.1 22 38 22.9 38 24C38 25.1 37.1 26 36 26Z" fill="white"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_115_17">
+                      <rect width="48" height="48" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+                <svg class="hidden md:block" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75" fill="none">
+                  <g clip-path="url(#clip0_281_97)">
+                    <path d="M56.25 40.625H40.625V56.25C40.625 57.9688 39.2188 59.375 37.5 59.375C35.7812 59.375 34.375 57.9688 34.375 56.25V40.625H18.75C17.0312 40.625 15.625 39.2188 15.625 37.5C15.625 35.7812 17.0312 34.375 18.75 34.375H34.375V18.75C34.375 17.0312 35.7812 15.625 37.5 15.625C39.2188 15.625 40.625 17.0312 40.625 18.75V34.375H56.25C57.9688 34.375 59.375 35.7812 59.375 37.5C59.375 39.2188 57.9688 40.625 56.25 40.625Z" fill="white"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_281_97">
+                      <rect width="75" height="75" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+          </button>
+      </div>
+
+    </main>
+   
+    <dialog class="bg-[#252525] rounded-[.5rem] h-screen dialog no-scrollbar">
+      <form method="dialog" id="form">
+      <div class="p-4 flex justify-between items-center max-w-[750px] md:mx-auto">
+        <div class="w-[3.1rem] md:w-[4.3rem] h-[3.1rem] md:h-[4.3rem] shrink-0 rounded-[.9rem] bg-[#3B3B3B] flex justify-center items-center close">
+
+          <button type="button">
+             <svg class="block md:hidden" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <g clip-path="url(#clip0_149_151)">
+                <path d="M29.42 12.42C28.64 11.64 27.38 11.64 26.6 12.42L17.42 21.6C16.64 22.38 16.64 23.64 17.42 24.42L26.6 33.6C27.38 34.38 28.64 34.38 29.42 33.6C30.2 32.82 30.2 31.56 29.42 30.78L21.66 23L29.42 15.24C30.2 14.46 30.18 13.18 29.42 12.42Z" fill="white"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_149_151">
+                  <rect width="48" height="48" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+   
+            <svg class="hidden md:block" xmlns="http://www.w3.org/2000/svg" width="25" height="43" viewBox="0 0 25 43" fill="none">
+              <path d="M23.8895 1.1255C22.4089 -0.375168 20.0171 -0.375168 18.5364 1.1255L1.11048 18.7873C-0.370159 20.2879 -0.370159 22.7121 1.11048 24.2128L18.5364 41.8745C20.0171 43.3752 22.4089 43.3752 23.8895 41.8745C25.3702 40.3738 25.3702 37.9497 23.8895 36.449L9.15907 21.4808L23.8895 6.55101C25.3702 5.05034 25.3322 2.5877 23.8895 1.1255Z" fill="white"/>
+            </svg>
+          </button>
+       </div>
+
+
+     <div class="flex w-max">
+
+      <!-- ! Eye Icon button -->
+    <!--   <div class="w-[3.1rem] md:w-[4.3rem] h-[3.1rem] md:h-[4.3rem] mr-[1.3rem] shrink-0 rounded-[.9rem] bg-[#3B3B3B] flex justify-center items-center">
+          <button>
+              <svg class="block md:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <g clip-path="url(#clip0_149_155)">
+                    <path d="M12 6C15.79 6 19.17 8.13 20.82 11.5C19.17 14.87 15.79 17 12 17C8.21 17 4.83 14.87 3.18 11.5C4.83 8.13 8.21 6 12 6ZM12 4C7 4 2.73 7.11 1 11.5C2.73 15.89 7 19 12 19C17 19 21.27 15.89 23 11.5C21.27 7.11 17 4 12 4ZM12 9C13.38 9 14.5 10.12 14.5 11.5C14.5 12.88 13.38 14 12 14C10.62 14 9.5 12.88 9.5 11.5C9.5 10.12 10.62 9 12 9ZM12 7C9.52 7 7.5 9.02 7.5 11.5C7.5 13.98 9.52 16 12 16C14.48 16 16.5 13.98 16.5 11.5C16.5 9.02 14.48 7 12 7Z" fill="white"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_149_155">
+                      <rect width="24" height="24" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+                <svg class="hidden md:block" xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
+                  <g clip-path="url(#clip0_281_222)">
+                    <path d="M22.9998 11.5C30.264 11.5 36.7423 15.5825 39.9048 22.0416C36.7423 28.5008 30.264 32.5833 22.9998 32.5833C15.7357 32.5833 9.25734 28.5008 6.09484 22.0416C9.25734 15.5825 15.7357 11.5 22.9998 11.5ZM22.9998 7.66663C13.4165 7.66663 5.23234 13.6275 1.9165 22.0416C5.23234 30.4558 13.4165 36.4166 22.9998 36.4166C32.5832 36.4166 40.7673 30.4558 44.0832 22.0416C40.7673 13.6275 32.5832 7.66663 22.9998 7.66663ZM22.9998 17.25C25.6448 17.25 27.7915 19.3966 27.7915 22.0416C27.7915 24.6866 25.6448 26.8333 22.9998 26.8333C20.3548 26.8333 18.2082 24.6866 18.2082 22.0416C18.2082 19.3966 20.3548 17.25 22.9998 17.25ZM22.9998 13.4166C18.2465 13.4166 14.3748 17.2883 14.3748 22.0416C14.3748 26.795 18.2465 30.6666 22.9998 30.6666C27.7532 30.6666 31.6248 26.795 31.6248 22.0416C31.6248 17.2883 27.7532 13.4166 22.9998 13.4166Z" fill="white"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_281_222">
+                      <rect width="46" height="46" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+          </button>
+      </div> -->
+
+      <!-- ! Save icon button -->
+      <div class="w-[3.1rem] md:w-[4.3rem] h-[3.1rem] md:h-[4.3rem] shrink-0 rounded-[.9rem] bg-[rgb(59,59,59)] flex justify-center items-center gap-[2rem] save">
+         <button class="w-full h-full rounded-[.9rem]  flex items-center justify-center" type="submit">
+          <svg class="block md:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <g clip-path="url(#clip0_149_153)">
+                <path d="M19.5926 3H5.37037C4.05481 3 3 3.9 3 5V19C3 20.1 4.05481 21 5.37037 21H21.963C23.2667 21 24.3333 20.1 24.3333 19V7L19.5926 3ZM21.963 19H5.37037V5H18.6089L21.963 7.83V19ZM13.6667 12C11.6993 12 10.1111 13.34 10.1111 15C10.1111 16.66 11.6993 18 13.6667 18C15.6341 18 17.2222 16.66 17.2222 15C17.2222 13.34 15.6341 12 13.6667 12ZM6.55556 6H17.2222V10H6.55556V6Z" fill="white"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_149_153">
+                  <rect width="24" height="24" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+            <svg class="hidden md:block" xmlns="http://www.w3.org/2000/svg" width="41" height="46" viewBox="0 0 41 46" fill="none">
+              <g clip-path="url(#clip0_281_166)">
+                <path d="M33.4707 5.75H9.17438C6.92698 5.75 5.125 7.475 5.125 9.58333V36.4167C5.125 38.525 6.92698 40.25 9.17438 40.25H37.5201C39.7472 40.25 41.5695 38.525 41.5695 36.4167V13.4167L33.4707 5.75ZM37.5201 36.4167H9.17438V9.58333H31.7902L37.5201 15.0075V36.4167ZM23.3472 23C19.9862 23 17.2731 25.5683 17.2731 28.75C17.2731 31.9317 19.9862 34.5 23.3472 34.5C26.7082 34.5 29.4213 31.9317 29.4213 28.75C29.4213 25.5683 26.7082 23 23.3472 23ZM11.1991 11.5H29.4213V19.1667H11.1991V11.5Z" fill="white"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_281_166">
+                  <rect width="41" height="46" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+         </button>
+      </div>
+     </div>
+  </div>
+
+  <div class="w-11/12 md:max-w-[44rem] mx-auto  md:mx-auto pb-2 md:mt-[3rem] min-h-[30rem]">
+    <article class="text-white md:p-4 h-full">
+
+          <textarea class="w-full shrink-0 text-[2.1rem] md:text-[3rem] font-[400] p-2  bg-transparent placeholder:text-[2.1rem] placeholder:md:text-[3rem] resize-none title" placeholder="Title" required></textarea>
+
+        <textarea class="w-full h-full  bg-transparent p-2  md:mt-[1rem] text-[1.4rem] shrink-0 mt-4 placeholder:text-[1.4rem]  md:text-[3rem] placeholder:md:text-[3rem] resize-none min-h-[20rem] md:min-h-[25rem] description" placeholder="Description"></textarea>
+        
+    </article>
+  </div>
+      </form>
+
+   <!-- ** Absolute prompt -->
+  <div class="hidden">
+    <div class="w-screen h-screen absolute bg-[rgba(196,196,196,.5)] top-0 left-0 flex justify-center items-center">
+
+      <article class="bg-[#252525] w-[20rem] md:w-[30rem] lg:w-[34rem] h-[14rem] md:h-[20rem] lg:h-[22rem] shrink-0 rounded-[1.5rem]">
+        <div class="w-[2.5rem] md:w-max h-[2.5rem] md:h-max rounded-full mx-auto mt-[2.6rem]">
+          <svg class="block md:hidden" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+            <path d="M18.0001 3.59998C10.0513 3.59998 3.6001 10.0512 3.6001 18C3.6001 25.9488 10.0513 32.4 18.0001 32.4C25.9489 32.4 32.4001 25.9488 32.4001 18C32.4001 10.0512 25.9489 3.59998 18.0001 3.59998ZM19.4401 25.2H16.5601V16.56H19.4401V25.2ZM19.4401 13.68H16.5601V10.8H19.4401V13.68Z" fill="#606060"/>
+          </svg>
+          <svg class="hidden md:block" xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90" fill="none">
+            <path d="M45 9C25.128 9 9 25.128 9 45C9 64.872 25.128 81 45 81C64.872 81 81 64.872 81 45C81 25.128 64.872 9 45 9ZM48.6 63H41.4V41.4H48.6V63ZM48.6 34.2H41.4V27H48.6V34.2Z" fill="#606060"/>
+          </svg>
+
+        </div>
+        <p class="text-[#CFCFCF] text-center text-[1.4rem] font-[400] mt-[1.2rem]">Save Changes?</p>
+        <div class="w-max mx-auto mt-[1rem]">
+          <button class="w-[7rem] md:w-[8rem] h-[2.4rem] md:h-[3.1rem] shrink-0 bg-red-600 text-white rounded-[.3rem] mr-[1rem]">Discard</button>
+          <button class="w-[7rem] md:w-[8rem] h-[2.4rem] md:h-[3.1rem] shrink-0 bg-green-600 text-white rounded-[.3rem]">Save</button>
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+  <!-- ** Absolute prompt 2-->
+  <div class="hidden">
+
+    <div class="w-screen h-screen absolute bg-[rgba(196,196,196,.5)] top-0 left-0 flex justify-center items-center">
+
+      <article class="bg-[#252525] w-[20rem] md:w-[30rem] lg:w-[34rem] h-[14rem] md:h-[20rem] lg:h-[22rem]  shrink-0 rounded-[1.5rem]">
+        <div class="w-[2.5rem] md:w-max h-[2.5rem] md:h-max rounded-full mx-auto mt-[2.6rem]">
+          <svg class="block md:hidden" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+            <path d="M18.0001 3.59998C10.0513 3.59998 3.6001 10.0512 3.6001 18C3.6001 25.9488 10.0513 32.4 18.0001 32.4C25.9489 32.4 32.4001 25.9488 32.4001 18C32.4001 10.0512 25.9489 3.59998 18.0001 3.59998ZM19.4401 25.2H16.5601V16.56H19.4401V25.2ZM19.4401 13.68H16.5601V10.8H19.4401V13.68Z" fill="#606060"/>
+          </svg>
+          <svg class="hidden md:block" xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90" fill="none">
+            <path d="M45 9C25.128 9 9 25.128 9 45C9 64.872 25.128 81 45 81C64.872 81 81 64.872 81 45C81 25.128 64.872 9 45 9ZM48.6 63H41.4V41.4H48.6V63ZM48.6 34.2H41.4V27H48.6V34.2Z" fill="#606060"/>
+          </svg>
+
+        </div>
+        <p class="text-[#CFCFCF] w-[20rem] mx-auto text-center text-[1.4rem] font-[400] mt-[1.2rem]">Are you sure you want to discard the changes?</p>
+        <div class="w-max mx-auto mt-[1rem]">
+          <button class="w-[7rem] md:w-[8rem] h-[2.4rem] md:h-[3.1rem] shrink-0 bg-red-600 text-white rounded-[.3rem] mr-[1rem]">Discard</button>
+          <button class="w-[7rem] md:w-[8rem] h-[2.4rem] md:h-[3.1rem] shrink-0 bg-green-600 text-white rounded-[.3rem]">Keep</button>
+        </div>
+      </article>
+
+    </div>
+  </div>
+ 
+</div>
+  
+    </dialog>
+   
+    <dialog class="bg-[#252525] rounded-[.5rem] h-screen view no-scrollbar">
+      <form method="dialog" id="form">
+      <div class="p-4 flex justify-between items-center max-w-[750px] md:mx-auto">
+        <div class="w-[3.1rem] md:w-[4.3rem] h-[3.1rem] md:h-[4.3rem] shrink-0 rounded-[.9rem] bg-[#3B3B3B] flex justify-center items-center">
+
+          <button type="button" class="w-full h-full viewBack rounded-[1rem] flex items-center justify-center hover:bg-black duration-[.5s]">
+             <svg class="block md:hidden" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <g clip-path="url(#clip0_149_151)">
+                <path d="M29.42 12.42C28.64 11.64 27.38 11.64 26.6 12.42L17.42 21.6C16.64 22.38 16.64 23.64 17.42 24.42L26.6 33.6C27.38 34.38 28.64 34.38 29.42 33.6C30.2 32.82 30.2 31.56 29.42 30.78L21.66 23L29.42 15.24C30.2 14.46 30.18 13.18 29.42 12.42Z" fill="white"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_149_151">
+                  <rect width="48" height="48" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+   
+            <svg class="hidden md:block" xmlns="http://www.w3.org/2000/svg" width="25" height="43" viewBox="0 0 25 43" fill="none">
+              <path d="M23.8895 1.1255C22.4089 -0.375168 20.0171 -0.375168 18.5364 1.1255L1.11048 18.7873C-0.370159 20.2879 -0.370159 22.7121 1.11048 24.2128L18.5364 41.8745C20.0171 43.3752 22.4089 43.3752 23.8895 41.8745C25.3702 40.3738 25.3702 37.9497 23.8895 36.449L9.15907 21.4808L23.8895 6.55101C25.3702 5.05034 25.3322 2.5877 23.8895 1.1255Z" fill="white"/>
+            </svg>
+          </button>
+       </div>
+
+
+     <div class="flex w-max">
+
+      <!-- ! Save and edit Button-->
+      <div class=" h-[3.1rem] md:h-[4.3rem] mr-[1.3rem] shrink-0 rounded-[.9rem]  flex gap-[2rem]  justify-center items-center ">
+          <button type="button" class="w-full h-full rounded-[.9rem] text-[1.5rem] text-white bg-[#3B3B3B] hover:bg-black duration-[.5s] p-4 editBtn">
+             Edit
+          </button>
+          <button type="submit" class=" w-full h-full rounded-[.9rem] text-[1.5rem] text-white bg-[#3B3B3B] hover:bg-black duration-[.5s] p-4 saveEdit hidden">
+             Save
+          </button>
+      </div>
+      </div>
+     </div>
+  </div>
+
+  <div class="w-11/12 md:max-w-[44rem] mx-auto  md:mx-auto pb-2 md:mt-[3rem] min-h-[30rem]">
+    <article class="text-white md:p-4 h-full">
+
+          <textarea class="w-full shrink-0 text-[2.1rem] md:text-[3rem] font-[400] p-2  bg-transparent placeholder:text-[2.1rem] placeholder:md:text-[3rem] resize-none title" placeholder="Title" required></textarea>
+
+        <textarea class="w-full h-full  bg-transparent p-2  md:mt-[1rem] text-[1.4rem] shrink-0 mt-4 placeholder:text-[1.4rem]  md:text-[3rem] placeholder:md:text-[3rem] resize-none min-h-[20rem] md:min-h-[25rem] description" placeholder="Description"></textarea>
+        
+    </article>
+  </div>
+      </form>
+    </dialog>
+
+   <!-- ** Absolute prompt -->
+  <dialog class="discardPrompt w-screen h-screen no-scrollbar bg-[rgba(11,11,11,0.9)] rounded-[1rem]">
+
+    <form method="dialog">
+      <div class="w-screen h-screen absolute bg-[rgba(120,60,60,0.5)] top-0 left-0 flex justify-center items-center">
+
+      <article class="bg-[#252525] w-[20rem] md:w-[30rem] lg:w-[34rem] h-[14rem] md:h-[20rem] lg:h-[22rem]  shrink-0 rounded-[1.5rem]">
+        <div class="w-[2.5rem] md:w-max h-[2.5rem] md:h-max rounded-full mx-auto mt-[2.6rem]">
+          <svg class="block md:hidden" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+            <path d="M18.0001 3.59998C10.0513 3.59998 3.6001 10.0512 3.6001 18C3.6001 25.9488 10.0513 32.4 18.0001 32.4C25.9489 32.4 32.4001 25.9488 32.4001 18C32.4001 10.0512 25.9489 3.59998 18.0001 3.59998ZM19.4401 25.2H16.5601V16.56H19.4401V25.2ZM19.4401 13.68H16.5601V10.8H19.4401V13.68Z" fill="#606060"/>
+          </svg>
+          <svg class="hidden md:block" xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90" fill="none">
+            <path d="M45 9C25.128 9 9 25.128 9 45C9 64.872 25.128 81 45 81C64.872 81 81 64.872 81 45C81 25.128 64.872 9 45 9ZM48.6 63H41.4V41.4H48.6V63ZM48.6 34.2H41.4V27H48.6V34.2Z" fill="#606060"/>
+          </svg>
+
+        </div>
+        <p class="text-[#CFCFCF] text-center text-[1.4rem] font-[400] mt-[1.2rem]">Are you sure you want to discard the changes made?</p>
+        <div class="w-max mx-auto mt-[1rem]">
+          <button class="w-[7rem] md:w-[8rem] h-[2.4rem] md:h-[3.1rem] shrink-0 bg-red-600 text-white rounded-[.3rem] mr-[1rem]" type="submit" value="Discard">Discard</button>
+          <button class="w-[7rem] md:w-[8rem] h-[2.4rem] md:h-[3.1rem] shrink-0 bg-green-600 text-white rounded-[.3rem]" type="submit" value="Back to note">Back to note</button>
+        </div>
+      </article>
+
+    </div>
+    </form>
+  </div>
+
+  <!-- ** Absolute prompt 2-->
+  <div class="hidden">
+
+    <div class="w-screen h-screen absolute bg-[rgba(196,196,196,.5)] top-0 left-0 flex justify-center items-center">
+
+      <article class="bg-[#252525] w-[20rem] md:w-[30rem] lg:w-[34rem] h-[14rem] md:h-[20rem] lg:h-[22rem]  shrink-0 rounded-[1.5rem]">
+        <div class="w-[2.5rem] md:w-max h-[2.5rem] md:h-max rounded-full mx-auto mt-[2.6rem]">
+          <svg class="block md:hidden" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+            <path d="M18.0001 3.59998C10.0513 3.59998 3.6001 10.0512 3.6001 18C3.6001 25.9488 10.0513 32.4 18.0001 32.4C25.9489 32.4 32.4001 25.9488 32.4001 18C32.4001 10.0512 25.9489 3.59998 18.0001 3.59998ZM19.4401 25.2H16.5601V16.56H19.4401V25.2ZM19.4401 13.68H16.5601V10.8H19.4401V13.68Z" fill="#606060"/>
+          </svg>
+          <svg class="hidden md:block" xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90" fill="none">
+            <path d="M45 9C25.128 9 9 25.128 9 45C9 64.872 25.128 81 45 81C64.872 81 81 64.872 81 45C81 25.128 64.872 9 45 9ZM48.6 63H41.4V41.4H48.6V63ZM48.6 34.2H41.4V27H48.6V34.2Z" fill="#606060"/>
+          </svg>
+
+        </div>
+        <p class="text-[#CFCFCF] w-[20rem] mx-auto text-center text-[1.4rem] font-[400] mt-[1.2rem]">Are you sure you want to discard the changes?</p>
+        <div class="w-max mx-auto mt-[1rem]">
+          <button class="w-[7rem] md:w-[8rem] h-[2.4rem] md:h-[3.1rem] shrink-0 bg-red-600 text-white rounded-[.3rem] mr-[1rem]">Discard</button>
+          <button class="w-[7rem] md:w-[8rem] h-[2.4rem] md:h-[3.1rem] shrink-0 bg-green-600 text-white rounded-[.3rem]">Keep</button>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</div>
+  
+  </dialog>
+
+     <!-- ** Absolute prompt 2-->
+  <dialog class="deletePrompt w-full h-full md:w-screen md:h-screen no-scrollbar bg-[rgba(11,11,11,0.9)] rounded-[1rem] ">
+
+    <div class="w-full h-full  absolute bg-[rgba(196,196,196,0.18)] top-0 left-0 flex justify-center items-center">
+
+      <article class="bg-[#252525] w-[20rem]  md:w-[30rem] lg:w-[34rem] h-auto pb-8 md:h-[20rem] lg:h-[22rem]  shrink-0 rounded-[1.5rem]">
+        <div class="w-[2.5rem] md:w-max h-[2.5rem] md:h-max rounded-full mx-auto mt-[2.6rem]">
+          <svg class="block md:hidden" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+            <path d="M18.0001 3.59998C10.0513 3.59998 3.6001 10.0512 3.6001 18C3.6001 25.9488 10.0513 32.4 18.0001 32.4C25.9489 32.4 32.4001 25.9488 32.4001 18C32.4001 10.0512 25.9489 3.59998 18.0001 3.59998ZM19.4401 25.2H16.5601V16.56H19.4401V25.2ZM19.4401 13.68H16.5601V10.8H19.4401V13.68Z" fill="#606060"/>
+          </svg>
+          <svg class="hidden md:block" xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90" fill="none">
+            <path d="M45 9C25.128 9 9 25.128 9 45C9 64.872 25.128 81 45 81C64.872 81 81 64.872 81 45C81 25.128 64.872 9 45 9ZM48.6 63H41.4V41.4H48.6V63ZM48.6 34.2H41.4V27H48.6V34.2Z" fill="#606060"/>
+          </svg>
+
+        </div>
+        <form method="dialog">
+          <p class="text-[#CFCFCF] w-[20rem] mx-auto text-center text-[1.4rem] font-[400] mt-[1.2rem]">Are you sure you want to delete this item?</p>
+        <div class="w-max mx-auto mt-[1rem]">
+          <button class="w-[7rem] md:w-[8rem] h-[2.4rem] md:h-[3.1rem] shrink-0 bg-red-600 text-white rounded-[.3rem] mr-[1rem]" value="delete" type="submit">Delete</button>
+          <button class="w-[7rem] md:w-[8rem] h-[2.4rem] md:h-[3.1rem] shrink-0 bg-green-600 text-white rounded-[.3rem]" value="keep" type="submit">Keep</button>
+        </div>
+        </form>
+      </article>
+
+    </div>
+  </dialog>
+</body>
+</html>
