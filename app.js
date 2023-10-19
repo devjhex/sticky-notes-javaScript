@@ -20,13 +20,29 @@ let edit = false;
 let viewState = false;
 let clickedElementID;
 
-
+let observer;
 let title = document.querySelector(".title");
 let description = document.querySelector(".description");
 
-window.addEventListener("DOMContentLoaded",clearBackground);
-
+window.addEventListener("DOMContentLoaded",init);
 window.addEventListener('DOMContentLoaded',setUpItems);
+
+function init(){
+    let config = {
+        childList:'true'
+    };
+
+    observer = new MutationObserver(mutated);
+    observer.observe(container,config)
+}
+
+function mutated(mutationList){
+    for(let mutation of mutationList){
+        if (mutation.type=='childList') {
+            clearBackground();
+        }
+    }
+}
 
 form.addEventListener("submit",addItem);
 
@@ -113,7 +129,6 @@ function addItem(){
 
     if(noteTitle && !edit){
         createNoteElement(id,noteTitle);
-        clearBackground();
         addNoteToLocalStorage(id,noteTitle,noteDescription);
         setDefault();
     }
