@@ -10,6 +10,7 @@ const saveEdit = document.querySelector(".saveEdit");
 
 const backBtn = document.querySelector(".close");
 const viewBack = document.querySelector(".viewBack");
+const close  = document.querySelector('.close');
 const saveBtn = document.querySelector(".save");
 const form = document.getElementById("form");
 const container = document.querySelector(".container");
@@ -26,6 +27,10 @@ let description = document.querySelector(".description");
 
 window.addEventListener("DOMContentLoaded",init);
 window.addEventListener('DOMContentLoaded',setUpItems);
+
+close.addEventListener("click", ()=>{
+    dialog.close();
+});
 
 function init(){
     let config = {
