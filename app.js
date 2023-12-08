@@ -181,21 +181,22 @@ function createNoteElement(id,content){
         element.classList.add("sticky-note");
         element.classList.add(`bg-[${generateColor(colors)}]`);
 
-    element.innerHTML = `<button class="absolute top-2 right-4 more">
-        More
-        <i class="fa-solid fa-ellipsis-vertical"></i>
+    element.innerHTML = `<button class="absolute top-4 right-[10px] duration-[.5s] hover:bg-slate-200 more rounded-full">
+        <img src="./Images/ellipsis.svg">
       </button>
      
      <div class="absolute w-full h-full duration-[.5s] top-0 left-0 hidden editDelete">
      <div class="absolute top-2 right-4 z-20">
-     <button class="text-white p-1 rounded-[1rem] hover:bg-green-600 duration-[.5s] goBack">
-       Back
+     <button class="text-white p-[2px] rounded-[1rem] hover:bg-pink-600 duration-[.5s] mt-[10px] goBack">
+     <img src="./Images/backLeft.svg" class="rotate-180">
      </button>
    </div>
       <div class="absolute p-2 w-full h-full top-0 left-0 rounded-xl bg-[#FD99FF]">
 
       <div class="text-white flex items-center justify-center bg-black w-full h-full rounded-xl">
-        <button class="rounded-xl w-full h-full hover:bg-red-700 duration-[.5s] text-[1rem] md:text-[1.5rem] deleteBtn">Delete</button>
+        <button class="rounded-xl w-full h-full flex items-center justify-center hover:bg-red-700 duration-[.5s] text-[1rem] md:text-[1.5rem] deleteBtn">
+        <img src="./Images/trash.svg">
+        Delete</button>
       </div>
       </div>
      </div><p class="text-[1.5rem] font-[400]">${content}</p>`;
