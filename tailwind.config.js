@@ -2,8 +2,6 @@
 module.exports = {
   content: [
     'index.html',
-    'notes.html',
-    'singleNote.html',
     'app.js',
   ],
   theme: {
